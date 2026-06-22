@@ -190,7 +190,7 @@ export default function RoadmapsPage() {
     const element = document.getElementById(`tech-${techName.toLowerCase()}`);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "center" });
-      // Add temporary highlight animation class
+      // Add temporary highlight animation variant
       element.classList.add("ring-2", "ring-black", "dark:ring-white");
       setTimeout(() => {
         element.classList.remove("ring-2", "ring-black", "dark:ring-white");
