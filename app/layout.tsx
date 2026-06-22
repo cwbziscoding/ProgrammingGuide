@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Programming Guide Website | wTechnologies",
-  description: "A beginner-friendly guide to becoming a software engineer and developer. Learn the fundamentals, build real projects, and never stop creating.",
+  title: "Programming Guide | wTech",
+  description:
+    "A beginner-friendly guide to becoming a software engineer and developer. Learn the fundamentals, build real projects, and never stop creating.",
 };
 
 const themeScript = `

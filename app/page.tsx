@@ -1,9 +1,17 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Map, Users, Wrench, GraduationCap, BookOpen, Cpu, ArrowRight } from 'lucide-react';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Map,
+  Users,
+  Wrench,
+  GraduationCap,
+  BookOpen,
+  Cpu,
+  ArrowRight,
+} from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -21,40 +29,46 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: 'spring', stiffness: 100, damping: 20 },
+    transition: { type: "spring", stiffness: 100, damping: 20 },
   },
 } as const;
 
 const FEATURES = [
   {
     icon: Map,
-    title: 'Structured Roadmaps',
-    description: 'Visual step-by-step guides for Frontend, Backend, and Database domains.',
+    title: "Structured Roadmaps",
+    description:
+      "Visual step-by-step guides for Frontend, Backend, and Database domains.",
   },
   {
     icon: GraduationCap,
-    title: 'Beginner Friendly',
-    description: 'Clear analogies, step-by-step explanations, and real-world guidance.',
+    title: "Beginner Friendly",
+    description:
+      "Clear analogies, step-by-step explanations, and real-world guidance.",
   },
   {
     icon: BookOpen,
-    title: 'Learning Resources',
-    description: 'Essential documentation cards and references for languages and frameworks.',
+    title: "Learning Resources",
+    description:
+      "Essential documentation cards and references for languages and frameworks.",
   },
   {
     icon: Wrench,
-    title: 'Essential Tools',
-    description: 'Curated list of the best AI tools, developer software, and database clients.',
+    title: "Essential Tools",
+    description:
+      "Curated list of the best AI tools, developer software, and database clients.",
   },
   {
     icon: Users,
-    title: 'Helpful Creators',
-    description: 'A searchable directory of the best educational content creators in tech.',
+    title: "Helpful Creators",
+    description:
+      "A searchable directory of the best educational content creators in tech.",
   },
   {
     icon: Cpu,
-    title: 'AI-Assisted Learning',
-    description: 'Learn how to leverage modern AI tools to accelerate your path to software engineering.',
+    title: "AI-Assisted Learning",
+    description:
+      "Learn how to leverage modern AI tools to accelerate your path to software engineering.",
   },
 ];
 
@@ -84,7 +98,7 @@ export default function HomePage() {
             variants={itemVariants}
             className="font-sans text-5xl font-black tracking-tight text-black sm:text-7xl dark:text-white"
           >
-            Programming Guide Website
+            Programming Guide
           </motion.h1>
 
           {/* Subtitle */}
@@ -92,7 +106,8 @@ export default function HomePage() {
             variants={itemVariants}
             className="max-w-2xl text-lg text-zinc-500 sm:text-xl dark:text-zinc-400"
           >
-            A beginner-friendly guide to becoming a software engineer and developer.
+            A beginner-friendly guide to becoming a software engineer and
+            developer.
           </motion.p>
 
           {/* Motto */}
@@ -100,7 +115,8 @@ export default function HomePage() {
             variants={itemVariants}
             className="font-mono text-sm tracking-wide text-zinc-400 dark:text-zinc-500"
           >
-            &ldquo;Learn the fundamentals, build real projects, and never stop creating.&rdquo;
+            &ldquo;Learn the fundamentals, build real projects, and never stop
+            creating.&rdquo;
           </motion.p>
 
           {/* Buttons */}
@@ -131,8 +147,8 @@ export default function HomePage() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="grid gap-12 lg:grid-cols-3"
           >
             <div className="lg:col-span-1">
@@ -145,16 +161,26 @@ export default function HomePage() {
             </div>
             <div className="space-y-6 lg:col-span-2 text-zinc-600 dark:text-zinc-400">
               <p className="text-lg leading-relaxed">
-                Programming is the art and science of writing instructions for computers. It gives us the power to automate complex processes, solve intricate logical puzzles, and construct software applications that improve the lives of millions.
+                Programming is the art and science of writing instructions for
+                computers. It gives us the power to automate complex processes,
+                solve intricate logical puzzles, and construct software
+                applications that improve the lives of millions.
               </p>
               <p className="leading-relaxed">
-                But becoming a software developer can feel overwhelming. With thousands of technologies, stacks, and frameworks, beginners often face &ldquo;tutorial hell.&rdquo; This guide cuts through the noise, providing a structured, step-by-step path tailored for self-directed learning.
+                But becoming a software developer can feel overwhelming. With
+                thousands of technologies, stacks, and frameworks, beginners
+                often face &ldquo;tutorial hell.&rdquo; This guide cuts through
+                the noise, providing a structured, step-by-step path tailored
+                for self-directed learning.
               </p>
               <p className="font-mono text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
-                &ldquo;Consistency over intensity, and projects over certificates.&rdquo;
+                &ldquo;Consistency over intensity, and projects over
+                certificates.&rdquo;
               </p>
               <p className="leading-relaxed">
-                The most important part of programming is the habit of building. Write code every day, embrace failure as debugging practice, and use tutorials as references to build your own unique creations.
+                The most important part of programming is the habit of building.
+                Write code every day, embrace failure as debugging practice, and
+                use tutorials as references to build your own unique creations.
               </p>
             </div>
           </motion.div>
@@ -176,7 +202,7 @@ export default function HomePage() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
+          viewport={{ once: true, margin: "-50px" }}
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {FEATURES.map((feature, i) => {
@@ -185,7 +211,7 @@ export default function HomePage() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                whileHover={{ y: -6, borderColor: 'var(--color-foreground)' }}
+                whileHover={{ y: -6, borderColor: "var(--color-foreground)" }}
                 className="group flex flex-col justify-between rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-300 dark:border-zinc-800 dark:bg-zinc-950"
               >
                 <div>
