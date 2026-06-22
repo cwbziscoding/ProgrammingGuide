@@ -217,6 +217,13 @@ export default function RoadmapsPage() {
       {/* Roadmap Container */}
       <section className="flex flex-col items-center gap-12">
         {/* Tabs */}
+        <div className="flex flex-col text-center">
+          <span className="font-semibold">Web Devevelopment Roadmap</span>
+          <span className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            Here is your Web Development Roadmap for Frontend, Backend &
+            Database.
+          </span>
+        </div>
         <div className="flex border border-zinc-200 dark:border-zinc-800 rounded-lg p-1 bg-zinc-50 dark:bg-zinc-900/50">
           {(["frontend", "backend", "database"] as RoadmapTab[]).map((tab) => (
             <button
@@ -244,7 +251,6 @@ export default function RoadmapsPage() {
             </button>
           ))}
         </div>
-
         {/* Visual Roadmap Nodes Diagram - Vertical Flow (1, 2, 3) */}
         <div className="w-full border border-zinc-200 bg-white rounded-xl dark:border-zinc-800 dark:bg-zinc-950 p-8 sm:p-12 shadow-sm max-w-xl">
           <div className="flex flex-col items-center justify-center">

@@ -429,10 +429,10 @@ export default function GetStartedPage() {
       </section>
 
       {/* Build Core Projects */}
-      <section className="grid gap-12 lg:grid-cols-3 border-t border-zinc-200 pt-16 dark:border-zinc-800">
+      {/* <section className="grid gap-12 lg:grid-cols-3 border-t border-zinc-200 pt-16 dark:border-zinc-800">
         <div className="lg:col-span-1 flex flex-col gap-4">
           <span className="font-mono text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-            STEP 04
+            STEP 04 (First Milestone)
           </span>
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white">
             Build Real Projects
@@ -469,7 +469,7 @@ export default function GetStartedPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
